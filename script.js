@@ -52,7 +52,28 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
     
-
+    function sendToWhatsApp(event) {
+        event.preventDefault(); // Empêche le rechargement de la page
+    
+        let nom = document.querySelector("input[placeholder='nom']").value;
+        let email = document.querySelector("input[placeholder='email']").value;
+        let numero = document.querySelector("input[placeholder='numero']").value;
+        let foodName = document.querySelector("input[placeholder='food name']").value;
+        let address = document.querySelector("textarea").value;
+    
+        let message = `Bonjour, je voudrais commander :
+    - Nom : ${nom}
+    - Email : ${email}
+    - Téléphone : ${numero}
+    - Plat : ${foodName}
+    - Adresse : ${address}`;
+    
+        let phone = "33612345678"; // Remplace par ton numéro WhatsApp
+        let url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
+    
+        window.open(url, "_blank");
+    }
+    
 });
 
 
