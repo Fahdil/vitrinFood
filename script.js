@@ -68,7 +68,7 @@ document.addEventListener("DOMContentLoaded", function () {
     - Plat : ${foodName}
     - Adresse : ${address}`;
     
-        let phone = "33612345678"; // Remplace par ton numéro WhatsApp
+        let phone = "22953339725"; // Remplace par ton numéro WhatsApp
         let url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
     
         window.open(url, "_blank");
