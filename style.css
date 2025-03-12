@@ -573,4 +573,16 @@ header .navbar a:hover{
     }
 }
 
+.dark-mode {
+    background-color: #222;
+    color: #fff;
+}
+
+.dark-mode header {
+    background: #333;
+}
+
+.dark-mode a {
+    color: #ff3838;
+}
 

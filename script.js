@@ -36,6 +36,17 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
+        const toggleButton = document.getElementById("toggle-theme");
+
+    toggleButton.addEventListener("click", () => {
+        document.body.classList.toggle("dark-mode");
+
+        if (document.body.classList.contains("dark-mode")) {
+            toggleButton.textContent = "Mode Clair";
+        } else {
+            toggleButton.textContent = "Mode Sombre";
+        }
+    });
 
 
 
